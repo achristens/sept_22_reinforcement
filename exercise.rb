@@ -18,4 +18,7 @@ wheelchair = venues.select do |venue|
   venue[:capacity] >= 150
 end
 
+# This is the same statment as above, formatted differently:
+# wheelchair = venues.select{ |venue| venue[:wheelchair_accessible] && venue[:capacity] >= 150}
+
 puts wheelchair
